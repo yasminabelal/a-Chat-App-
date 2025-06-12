@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1><i class="fas fa-comments"></i> Neon Chat</h1>
+            <p>Real-time messaging with WebSocket</p>
+        </header>
+        
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will appear here dynamically -->
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="username" placeholder="Your name" required>
+            <input type="text" id="message-input" placeholder="Type your message here...">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i> Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
